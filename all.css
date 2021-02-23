@@ -1,0 +1,153 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+	margin: 0;
+}
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+p {
+    margin: 0 0 15px 0;
+}
+span {
+    padding-left: 5px;
+    color: #2e2e2e;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://storge.pic2.me/cm/3840x2160/920/58710da961397.jpg);
+    color: white;
+}
+.content {
+    overflow: hidden;
+	margin: 20px 80px;
+}
+
+.content-header {
+    overflow: hidden;
+    margin: 20px 20px;
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    margin: 5px 20px 50px 20px;
+    width: 50%;
+	padding: 15px 15px 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+    color: rgb(90, 89, 89);
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#create_constructor, #submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #182264;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 15px 60px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #1c2fa8;
+}
+.button-block {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding: 15px 60px;
+    background-color: #ad0000;
+	color: white;
+	font-size: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+   
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #1c2fa8;
+    display: inline-block;
+    
+  }
+   
+.countdown-time {
+    padding: 10px;
+    border-radius: 3px;
+    background: #182264;
+    display: inline-block;
+    color: #fff;
+  }
+   
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  h4, h5, .test-again {
+      text-align: center;
+  }
+  @media (max-width: 1199px) {
+    .content-header {
+        margin: 0;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .card {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+}
